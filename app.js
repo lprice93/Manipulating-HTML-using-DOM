@@ -41,9 +41,32 @@ document.addEventListener('DOMContentLoaded', function () {
         } para.style.color = getRandomColor();
     });
 
-    // let btn3 = document.createElement('button-3');
-    // let btn3Text = document.createTextNode('Do Something');
-    // btn3.append(btn3Text);
-    // document.body.prepend(btn3);
+    let btn3 = document.createElement("button");
+    let btn3Text = document.createTextNode("Add Span");
+    btn3.append(btn3Text);
+    document.body.append(btn3);
+
+    let div = document.createElement("div");
+    document.body.append(div);
+    let span = document.createElement("span");
+    let spanText = document.createTextNode("Lindsay");
+    div.append(span);
+
+    btn3.addEventListener("click", function () {
+        span.append(spanText);
+        div.append(span);
+    });
+
+    let btn4 = document.getElementsByClassName('button-4')[0];
+    let ul = document.getElementsByClassName('ul')[0];
+    let li = document.createElement('li');
+    // let liText =
+
+    let friendsArray = ['Haily', 'Jasmine', "Halle", "Alexis", "Jalon", "Ariel", "Natasha", "Aisha", "Camille", "Sophia"];
+
+
+    btn4.addEventListener("click", function () {
+        ul.append(li);
+    });
 
 });
