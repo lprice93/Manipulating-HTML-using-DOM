@@ -60,13 +60,16 @@ document.addEventListener('DOMContentLoaded', function () {
     let btn4 = document.getElementsByClassName('button-4')[0];
     let ul = document.getElementsByClassName('ul')[0];
     let li = document.createElement('li');
-    // let liText =
 
     let friendsArray = ['Haily', 'Jasmine', "Halle", "Alexis", "Jalon", "Ariel", "Natasha", "Aisha", "Camille", "Sophia"];
 
+    let index = 0;
 
     btn4.addEventListener("click", function () {
+        let li = document.createElement('li');
+        li.textContent = friendsArray[index];
         ul.append(li);
+        index++;
     });
 
 });
